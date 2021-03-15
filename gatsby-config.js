@@ -126,6 +126,26 @@ module.exports = {
     "gatsby-plugin-netlify-cms",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
+
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingId: "UA-178410803-8", // Google Analytics / GA
+        head: true,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // The property ID; the tracking code won't be generated without it
+    //     trackingId: "UA-178410803-8",
+    //     // Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: true,
+    //     // Delays sending pageview hits on route update (in milliseconds)
+    //     pageTransitionDelay: 0,
+    //   },
+    // },
   ],
 }
